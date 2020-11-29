@@ -68,10 +68,6 @@ const updateEvent = async (req, res = response) => {
       msg: "Hable con el admin",
     });
   }
-  res.json({
-    ok: true,
-    eventId,
-  });
 };
 
 const deleteEvent = async (req, res = response) => {
