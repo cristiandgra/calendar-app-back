@@ -99,10 +99,6 @@ const deleteEvent = async (req, res = response) => {
       msg: "Hable con el admin",
     });
   }
-  res.json({
-    ok: true,
-    eventId,
-  });
 };
 
 module.exports = {
