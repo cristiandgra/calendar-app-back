@@ -6,7 +6,7 @@ const { generarJWT } = require("../helpers/jwt");
 const createUser = async (req, res = response) => {
   const { email, password } = req.body;
   try {
-    let user = await User.findOneAndUpdate({ email });
+    let user = await User.findOne({ email });
     if (user) {
       return res.status(400).json({
         ok: false,
